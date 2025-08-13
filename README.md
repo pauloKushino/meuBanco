@@ -72,6 +72,7 @@ No Visual Studio Code, instale as seguintes extensões:
    - **Password**: A senha configurada durante a instalação.
    - **Database**: Deixe em branco ou insira o nome do banco de dados (ex.: `escola`).
    - em **Database** pode dar um erro deixando em branco ou se você não criou o banco de dados, então faz o seguinte: abre o terminal (CMD) e escreve 'mysql -u root -p', digite a senha que voccê colocou na instalação do MySQL, e então digite o seguinte: 
+
                     -- Criar o banco de dados
                     CREATE DATABASE nomeDoBanco;
 
