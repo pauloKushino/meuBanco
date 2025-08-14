@@ -1,5 +1,4 @@
-CREATE DATABASE nomeDoBanco;
-USE nomeDoBanco;
+USE banco_teste;
 
 CREATE TABLE curso (
     id INT PRIMARY KEY AUTO_INCREMENT,

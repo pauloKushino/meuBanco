@@ -10,8 +10,9 @@
             "port": 3306,
             "driver": "MySQL",
             "name": "MySQL Local",
-            "database": "meubanco",
-            "username": "root"
+            "database": "banco_teste",
+            "username": "root",
+            "askForPassword": true
         }
     ]
 }

@@ -68,7 +68,7 @@ No Visual Studio Code, instale as seguintes extensões:
    - **Database**: abra o terminal (CMD) e escreva 'mysql -u root -p', digite a senha que voccê colocou na instalação do MySQL, e então digite o seguinte:
 
    -- Criar o banco de dados
-   CREATE DATABASE nomeDoBanco;
+   CREATE DATABASE banco_teste;
 
    -- Listar bancos de dados
    SHOW DATABASES;
