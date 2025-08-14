@@ -1,3 +1,6 @@
+CREATE DATABASE nomeDoBanco;
+USE nomeDoBanco;
+
 CREATE TABLE curso (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nomeCurso VARCHAR(100) NOT NULL,
@@ -40,7 +43,7 @@ CREATE TABLE chamada (
     curso_id INT,
     professor_id INT,
     FOREIGN KEY (curso_id) REFERENCES curso(id),
-    FOREIGN KEY (professor_id) REFERENCES professores(id)
+    FOREIGN KEY (professor_id) REFERENCES professor(id)
 );
 
 CREATE TABLE chamada_aluno (
@@ -49,5 +52,5 @@ CREATE TABLE chamada_aluno (
     aluno_id INT,
     presenca ENUM('Presente', 'Faltou'),
     FOREIGN KEY (chamada_id) REFERENCES chamada(id),
-    FOREIGN KEY (aluno_id) REFERENCES alunos(id) 
+    FOREIGN KEY (aluno_id) REFERENCES aluno(id) 
 );

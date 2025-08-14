@@ -1,13 +1,14 @@
 # Banco de Dados da Escola
 
-Este repositório contém os scripts SQL para o banco de dados da escola.
+Este repositório contém os scripts SQL para o banco de dados de uma sala.
 
 ## Estrutura
 
 - `create_tables.sql`: Scripts para criar as tabelas.
+- `updates.sql`: Alterações e atualizações no banco.
 - `insert_data.sql`: Scripts para inserir dados iniciais.
 - `select.sql`: Consultas SQL para visualizar os dados.
-- `updates.sql`: Alterações e atualizações no banco.
+
 
 ## Como usar
 
@@ -20,14 +21,7 @@ Este repositório contém os scripts SQL para o banco de dados da escola.
 
 Este repositório contém os scripts SQL para o banco de dados da escola.
 
-## Estrutura
 
-- `create_tables.sql`: Scripts para criar as tabelas.
-- `insert_data.sql`: Scripts para inserir dados iniciais.
-- `select.sql`: Consultas SQL para visualizar os dados.
-- `updates.sql`: Alterações e atualizações no banco.
-
----
 
 ## Como instalar e configurar o MySQL
 
@@ -50,13 +44,14 @@ Para usar o MySQL diretamente no terminal, você precisa adicioná-lo ao PATH do
 - Na seção **Variáveis do Sistema**, encontre a variável `Path` e clique em **Editar**.
 - Clique em **Novo** e cole o caminho copiado.
 - Clique em **OK** para salvar.
-4. Abra um novo terminal e execute: **mysql --version**
+4. Abra um novo terminal e execute: **mysql --version** para testar se esta funcionando, se retornar a versão, então esta ok.
 
 ## Configurando o Visual Studio Code para trabalhar com MySQL
 
 ### 1. Instalar extensões no VS Code
 No Visual Studio Code, instale as seguintes extensões:
 
+- **MySQL**
 - **SQLTools**: Para gerenciar conexões com o banco de dados.
 - **SQLTools MySQL/MariaDB Driver**: Driver necessário para conectar ao MySQL.
 
@@ -70,13 +65,15 @@ No Visual Studio Code, instale as seguintes extensões:
    - **Port**: `3306` (porta padrão do MySQL).
    - **User**: `root` (ou outro usuário configurado).
    - **Password**: A senha configurada durante a instalação.
-   - **Database**: Deixe em branco ou insira o nome do banco de dados (ex.: `escola`).
-   - em **Database** pode dar um erro deixando em branco ou se você não criou o banco de dados, então faz o seguinte: abre o terminal (CMD) e escreve 'mysql -u root -p', digite a senha que voccê colocou na instalação do MySQL, e então digite o seguinte: 
-                    -- Criar o banco de dados
-                    CREATE DATABASE nomeDoBanco;
+   - **Database**: abra o terminal (CMD) e escreva 'mysql -u root -p', digite a senha que voccê colocou na instalação do MySQL, e então digite o seguinte:
 
-                    -- Listar bancos de dados
-                    SHOW DATABASES;
+   -- Criar o banco de dados
+   CREATE DATABASE nomeDoBanco;
 
+   -- Listar bancos de dados
+   SHOW DATABASES;
+
+se retornar seus databases e estiver lá o que você criou, ok. E finalmente preencha o espaço do **Database** com o nome do banco criado.
 4. Clique em **Test Connection** para verificar se a conexão está funcionando.
-5. Salve
+5. Salve.
+6. Rode o script **create_tables.sql**
