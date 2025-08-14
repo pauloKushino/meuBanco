@@ -1,4 +1,4 @@
-# Banco de Dados da Escola
+# Banco de Dados de Sala
 
 Este repositório contém os scripts SQL para o banco de dados de uma sala.
 
